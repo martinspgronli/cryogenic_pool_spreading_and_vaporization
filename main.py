@@ -36,18 +36,6 @@ BEFORE RUNNING:
 
 Author: Martin Spillum Grønli (2024, SINTEF Energy Research)
 Code is based on https://github.com/clawpack/apps/blob/master/notebooks/pyclaw/beach.ipynb
-
-
-####################################################################################################################################
-####################################################################################################################################
-
-
-TO-DO:
-    -This script does not account for the reheating of ground where the pool has dried. 
-     If dried ground is rewetted, the pool will experience the heat flux as if it is was always wet. 
-     Implement solution where pool stops to cool when dry.
-    -Maximal distance from center of spill area assumes spill to be centered in (x, y) = (0, 0). 
-     Implement a more general solution.
 """
 
 
