@@ -1,5 +1,5 @@
 This repository contains Python code for simulating the spill of liquid ammonia or liquid hydrogen onto solid ground
-with variable thermal properties. Both boiling correlations and perfect thermal contact have been implemented. 
+having variable thermal properties. Both boiling correlations and perfect thermal contact have been implemented. 
 The code uses the Python interface of [Clawpack](https://www.clawpack.org), called PyClaw, to solve the shallow water equations. 
 Several parameters can be varied including initial spill velocity, ground topography, obstructions, and details 
 regarding the thermal properties of the substrate. More details can be found in: 
