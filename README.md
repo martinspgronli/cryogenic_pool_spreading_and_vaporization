@@ -1,8 +1,11 @@
-This repository contains Python code for simulating the spill of liquid ammonia or liquid hydrogen onto solid ground
-having variable thermal properties. Both boiling correlations and perfect thermal contact have been implemented. 
-The code uses the Python interface of [Clawpack](https://www.clawpack.org), called PyClaw, to solve the shallow water equations. 
+# Cryogenic pool spreading and vaporization
+
+This repository contains Python code for simulating the spill of liquid ammonia or liquid hydrogen onto solid ground. 
+The scripts uses the Python interface of [Clawpack](https://www.clawpack.org), called PyClaw, to solve the shallow water equations. 
 Several parameters can be varied including initial spill velocity, ground topography, obstructions, and details 
-regarding the thermal properties of the substrate. More details can be found in: 
+regarding the thermal properties of the substrate. The variable thermal properties of the substrate have been accounted for when 
+calculating heat flux from the ground into the liquid pool. Moreover, both boiling correlations and perfect thermal contact have 
+been implemented. For more comprehensive information, please refer to the additional details provided in: 
 [Spill, evaporation and substrate thermal transport model for liquid H2 and NH3 (2024)](ADD_LINK_TO_PUBLICATION.com).
 
 After cloning, pip install requirements by typing 
@@ -14,3 +17,13 @@ in terminal.
 Choose fluid in `main.py`. For NH3, adjust parameters in `variables_NH3.py`. For H2, adjust parameters in `variables_H2.py`.
 
 Run `main.py` to simulate the spill and generate plots.
+
+# Please cite
+If you are writing academic publications, please cite the following article:
+[Spill, evaporation and substrate thermal transport model for liquid H2 and NH3 (2024)](ADD_LINK_TO_PUBLICATION.com)
+
+# Acknowledgements 
+This work has been developed at SINTEF Energy Research, and was funded by the Research Council of Norway and industry through
+the [MaritimeNH3](https://www.sintef.no/prosjekter/2021/maritimenh3/) project, project number 328679. Support has also been 
+granted from the HYDROGENi Research Centre [hydrogeni.no](https://hydrogeni.no), performed under the Norwegian research program 
+FMETEKN, project number 333118.
