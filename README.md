@@ -26,7 +26,7 @@ If you are writing academic publications, please cite the following article:<br 
 [Spill, evaporation and substrate thermal transport model for liquid H2 and NH3 (2024)](ADD_LINK_TO_PUBLICATION.com).
 
 # License 
-This repo is distributed under the [MIT license]([insert_link_mit.com](https://github.com/martinspgronli/cryogenic_pool_spreading_and_vaporization/blob/c0fd9754d19ae548064d418f9687cf1bfe40c8d7/LICENSE-MIT)) and [Apache 2.0]([LICENSE-APACHE](https://github.com/martinspgronli/cryogenic_pool_spreading_and_vaporization/blob/c0fd9754d19ae548064d418f9687cf1bfe40c8d7/LICENSE-APACHE)).
+This repo is distributed under the [MIT license](https://github.com/martinspgronli/cryogenic_pool_spreading_and_vaporization/blob/c0fd9754d19ae548064d418f9687cf1bfe40c8d7/LICENSE-MIT)) and [Apache 2.0](https://github.com/martinspgronli/cryogenic_pool_spreading_and_vaporization/blob/c0fd9754d19ae548064d418f9687cf1bfe40c8d7/LICENSE-APACHE).
 
 # Acknowledgements 
 This work has been developed at SINTEF Energy Research, and was funded by the Research Council of Norway and industry through
