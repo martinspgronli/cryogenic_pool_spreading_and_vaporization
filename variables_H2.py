@@ -59,10 +59,10 @@ num_output_times        = 400       # Number of times result is outputted (to pl
 heat_flux_1d            = True      # Turn on heat flux from 1D model (heat flux calculated until t_end). If not, heat flux is calculated assuming perfect contact between pool and ground, see Eq. (16) in doi.org/10.1016/j.ijhydene.2020.06.131 
 H2_wet_sand_variable_boiling_corr_freeze = './heat_flux_data/H2_wet_sand_variable_boiling_corr_freeze_t_end_1400.npz'           # Wet saturated sand with variable thermal properties and boiling correlations
 H2_wet_sand_const_boiling_corr_freeze = './heat_flux_data/H2_wet_sand_const_boiling_corr_freeze_long_t_end_1400.npz'            # Wet saturated sand with constant thermal properties and boiling correlations
-H2_dry_sand_variable_boiling_corr = './heat_flux_data/H2_dry_sand_variable_boiling_corr_t_end_350.npz'                          # Dry sand with variable thermal properties and boiling correlations
-H2_dry_sand_const_boiling_corr = './heat_flux_data/H2_dry_sand_const_boiling_corr_t_end_200.npz'                                # Dry sand with constant thermal properties and boiling correlations
-H2_dry_sand_variable_perf_contact = './heat_flux_data/H2_dry_sand_variable_perf_contact_t_end_350.npz'                          # Dry sand with variable thermal properties and perfect thermal contact
-H2_dry_sand_const_perf_contact = './heat_flux_data/H2_dry_sand_const_perf_contact_t_end_200.npz'                                # Dry sand with constant thermal properties and perfect thermal contact
+H2_dry_sand_variable_boiling_corr = './heat_flux_data/H2_dry_sand_variable_boiling_corr_t_end_150.npz'                          # Dry sand with variable thermal properties and boiling correlations
+H2_dry_sand_const_boiling_corr = './heat_flux_data/H2_dry_sand_const_boiling_corr_t_end_150.npz'                                # Dry sand with constant thermal properties and boiling correlations
+H2_dry_sand_variable_perf_contact = './heat_flux_data/H2_dry_sand_variable_perf_contact_t_end_150.npz'                          # Dry sand with variable thermal properties and perfect thermal contact
+H2_dry_sand_const_perf_contact = './heat_flux_data/H2_dry_sand_const_perf_contact_t_end_150.npz'                                # Dry sand with constant thermal properties and perfect thermal contact
 
 heat_flux_data          = H2_wet_sand_variable_boiling_corr_freeze     # If heat_flux_1d, use this ground heat flux
 
