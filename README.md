@@ -13,11 +13,11 @@ pip install -r /path/to/requirements.txt
 ```
 in terminal.
 
-Select fluid in `main.py`. For LNH3, adjust parameters in `variables_NH3.py`. For LH2, adjust parameters in `variables_H2.py`.
 
-Run `main.py` to simulate the spill and generate plots.
 
-<h3><img align="right" width="400" src="evaporation_rate.png"> TECHNOLOGIES</h3>
+<h3><img align="right" width="400" src="evaporation_rate.png"> Select fluid in `main.py`. For LNH3, adjust parameters in `variables_NH3.py`. For LH2, adjust parameters in `variables_H2.py`.
+
+Run `main.py` to simulate the spill and generate plots.</h3>
 
 
 # Disclaimer
