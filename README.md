@@ -1,5 +1,7 @@
 # Cryogenic pool spreading and vaporization
-<p><img align="center" width="550" src="evaporation_rate.png"></p>
+<p align="center">
+  <img width="460" width="550" src="evaporation_rate.png">
+</p>
 
 
 This repository contains Python code for simulating the spill of liquid ammonia (LNH3) or liquid hydrogen (LH2) onto solid ground. 
