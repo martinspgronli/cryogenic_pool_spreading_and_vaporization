@@ -17,7 +17,7 @@ Select fluid in `main.py`. For LNH3, adjust parameters in `variables_NH3.py`. Fo
 
 Run `main.py` to simulate the spill and generate plots.
 
-![Model](evaporation_rate.png)
+<img align="right" width="100" height="100" src="evaporation_rate.png">
 
 # Disclaimer
 The code should be used with caution if assessing risks. The authors disclaim any liability for the interpretation and
