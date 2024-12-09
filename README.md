@@ -15,9 +15,9 @@ in terminal.
 
 
 
-<h3><img align="right" width="400" src="evaporation_rate.png"> Select fluid in `main.py`. For LNH3, adjust parameters in `variables_NH3.py`. For LH2, adjust parameters in `variables_H2.py`.
+<h1><img align="right" width="400" src="evaporation_rate.png"> Select fluid in `main.py`. For LNH3, adjust parameters in `variables_NH3.py`. For LH2, adjust parameters in `variables_H2.py`.
 
-Run `main.py` to simulate the spill and generate plots.</h3>
+Run `main.py` to simulate the spill and generate plots.</h1>
 
 
 # Disclaimer
