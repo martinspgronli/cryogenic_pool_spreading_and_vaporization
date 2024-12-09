@@ -1,5 +1,5 @@
 # Cryogenic pool spreading and vaporization
-<p align="center"><img width="550" src="evaporation_rate.png"></p>
+<p align="center"><img width="650" src="evaporation_rate.png"></p>
 
 
 
