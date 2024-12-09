@@ -11,7 +11,7 @@ rho_l                   = 682.64    # LNH3 density at 1 atm (kg/m^3). NIST Webbo
 rho_v                   = 0.88997   # Density of NH3 vapor at 1 atm and boiling point (kg/m^3). NIST Webbok
 vap_enthalpy            = 1.38e6    # Enthalpy of vaporization of NH_3 (J/kg). NIST Webbok
 
-# Properties for calculation of heat flux from ground in case perfect thermal contact is assumed
+# Properties for calculation of heat flux from ground in case heat_flux_1d=False and perfect thermal contact is assumed as in Eq. (16) in doi.org/10.1016/j.ijhydene.2020.06.131 
 T_pool                  = 239.832       # LNH3 temperature (K). Atmospheric boiling point of ammonia. NIST Webbook
 T_ground_inf            = 273.15 + 10   # Ground temperature at infinite depth
 thermal_cond_ground     = 3.72          # Thermal conductivity (W/mK) of the ground
@@ -53,20 +53,18 @@ y_dimension             = 5         # 0.5 * length (m) of pool in y-direction
 num_cells               = 150       # Number of grid cells in x-direction. y-direction will have the ~same grid spacing
 tfinal                  = 10        # End time (s). Must be less than some number when heat_flux = True, since heat flux is not calculated longer.
 
-num_output_times        = 100       # Number o times result is outputted (to plots and _output-folder). If too high, RAM can be used up
+num_output_times        = 100       # Number of times result is outputted (to plots and _output-folder). If too high, RAM can be used up
 
 
 # Ground heat flux
 heat_flux_1d            = True      # Turn on heat flux from 1D model (heat flux calculated until t_end). If not, heat flux is calculated assuming perfect contact between pool and ground, see Eq. (16) in doi.org/10.1016/j.ijhydene.2020.06.131 
-NH3_wet_sand_variable_boiling_corr_freeze = './heat_flux_data/NH3_wet_sand_variable_boiling_corr_freeze_t_end_1400.npz'     # Wet saturated sand with variable thermal properties and boiling correlations
-NH3_dry_sand_variable_boiling_corr = './heat_flux_data/NH3_dry_sand_variable_boiling_corr_t_end_2800.npz'                   # Dry sand with variable thermal properties and boiling correlations
-NH3_dry_sand_variable_perf_contact = './heat_flux_data/NH3_dry_sand_variable_perf_contact_t_end_1400.npz'                   # Dry sand with variable thermal properties and perfect thermal contact
-NH3_dry_sand_const_boiling_corr = './heat_flux_data/NH3_dry_sand_const_boiling_corr_t_end_2800.npz'                         # Dry sand with constant thermal properties and boiling correlations
-NH3_dry_sand_const_perf_contact = './heat_flux_data/NH3_dry_sand_const_perf_contact_t_end_2800.npz'                         # Dry sand with constant thermal properties and perfect thermal contact
-NH3_sat_concrete_variable_boiling_corr = './heat_flux_data/NH3_sat_concrete_variable_boiling_corr_t_end_2000.npz'           # Saturated concrete with variable thermal properties and boiling correlations
-NH3_dry_concrete_const_boiling_corr = './heat_flux_data/NH3_dry_concrete_const_boiling_corr_t_end_2000.npz'                 # Dry concrete with constant (almost no variation in thermal properties) thermal properties and boiling correlations
-
-heat_flux_data          = NH3_dry_sand_variable_boiling_corr     # If heat_flux_1d, import heat flux from this file
+NH3_wet_sand_variable_boiling_corr_freeze = '../heat_flux_data/NH3_wet_sand_variable_boiling_corr_freeze_t_end_1400.npz'     # Wet saturated sand with variable thermal properties and boiling correlations
+NH3_dry_sand_variable_boiling_corr = '../heat_flux_data/NH3_dry_sand_variable_boiling_corr_t_end_2800.npz'                   # Dry sand with variable thermal properties and boiling correlations
+NH3_dry_sand_variable_perf_contact = '../heat_flux_data/NH3_dry_sand_variable_perf_contact_t_end_1400.npz'                   # Dry sand with variable thermal properties and perfect thermal contact
+NH3_dry_sand_const_boiling_corr = '../heat_flux_data/NH3_dry_sand_const_boiling_corr_t_end_2800.npz'                         # Dry sand with constant thermal properties and boiling correlations
+NH3_dry_sand_const_perf_contact = '../heat_flux_data/NH3_dry_sand_const_perf_contact_t_end_2800.npz'                         # Dry sand with constant thermal properties and perfect thermal contact
+NH3_sat_concrete_variable_boiling_corr = '../heat_flux_data/NH3_sat_concrete_variable_boiling_corr_t_end_2000.npz'           # Saturated concrete with variable thermal properties and boiling correlations
+NH3_dry_concrete_const_boiling_corr = '../heat_flux_data/NH3_dry_concrete_const_boiling_corr_t_end_2000.npz'                 # Dry concrete with constant (almost no variation in thermal properties) thermal properties and boiling correlations
 
 # Set different heat flux for different domains defined in heat_flux_ground() in heat_flux.py
 heat_flux_data_domain_1 = NH3_dry_concrete_const_boiling_corr                    

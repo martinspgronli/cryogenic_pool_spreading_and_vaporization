@@ -11,7 +11,7 @@ rho_l                   = 70.848    # Density of LH2 (kg/m^3). NIST Webbook
 rho_v                   = 1.3322    # Density of H2 vapor at 1 atm and boiling point (kg/m^3). NIST Webbok
 vap_enthalpy            = 4.461e5   # Enthalpy of vaporization of LH_2 (J/kg). 
 
-# Properties for calculation of heat flux from ground in case perfect thermal contact is assumed
+# Properties for calculation of heat flux from ground in case heat_flux_1d=False and perfect thermal contact is assumed as in Eq. (16) in doi.org/10.1016/j.ijhydene.2020.06.131 
 T_pool                  = 273.15 - 252.781  # LH_2 temperature (K). Atmospheric boiling point of ammonia. NIST Webbook
 T_ground_inf            = 273.15 + 10       # Ground temperature at infinite depth
 thermal_cond_ground     = 3.72      # Thermal conductivity (W/mK) of the ground
@@ -57,14 +57,12 @@ num_output_times        = 400       # Number of times result is outputted (to pl
 
 # Ground heat flux
 heat_flux_1d            = True      # Turn on heat flux from 1D model (heat flux calculated until t_end). If not, heat flux is calculated assuming perfect contact between pool and ground, see Eq. (16) in doi.org/10.1016/j.ijhydene.2020.06.131 
-H2_wet_sand_variable_boiling_corr_freeze = './heat_flux_data/H2_wet_sand_variable_boiling_corr_freeze_t_end_1400.npz'           # Wet saturated sand with variable thermal properties and boiling correlations
-H2_wet_sand_const_boiling_corr_freeze = './heat_flux_data/H2_wet_sand_const_boiling_corr_freeze_long_t_end_1400.npz'            # Wet saturated sand with constant thermal properties and boiling correlations
-H2_dry_sand_variable_boiling_corr = './heat_flux_data/H2_dry_sand_variable_boiling_corr_t_end_150.npz'                          # Dry sand with variable thermal properties and boiling correlations
-H2_dry_sand_const_boiling_corr = './heat_flux_data/H2_dry_sand_const_boiling_corr_t_end_150.npz'                                # Dry sand with constant thermal properties and boiling correlations
-H2_dry_sand_variable_perf_contact = './heat_flux_data/H2_dry_sand_variable_perf_contact_t_end_150.npz'                          # Dry sand with variable thermal properties and perfect thermal contact
-H2_dry_sand_const_perf_contact = './heat_flux_data/H2_dry_sand_const_perf_contact_t_end_150.npz'                                # Dry sand with constant thermal properties and perfect thermal contact
-
-heat_flux_data          = H2_wet_sand_variable_boiling_corr_freeze     # If heat_flux_1d, use this ground heat flux
+H2_wet_sand_variable_boiling_corr_freeze = '../heat_flux_data/H2_wet_sand_variable_boiling_corr_freeze_t_end_1400.npz'           # Wet saturated sand with variable thermal properties and boiling correlations
+H2_wet_sand_const_boiling_corr_freeze = '../heat_flux_data/H2_wet_sand_const_boiling_corr_freeze_long_t_end_1400.npz'            # Wet saturated sand with constant thermal properties and boiling correlations
+H2_dry_sand_variable_boiling_corr = '../heat_flux_data/H2_dry_sand_variable_boiling_corr_t_end_150.npz'                          # Dry sand with variable thermal properties and boiling correlations
+H2_dry_sand_const_boiling_corr = '../heat_flux_data/H2_dry_sand_const_boiling_corr_t_end_150.npz'                                # Dry sand with constant thermal properties and boiling correlations
+H2_dry_sand_variable_perf_contact = '../heat_flux_data/H2_dry_sand_variable_perf_contact_t_end_150.npz'                          # Dry sand with variable thermal properties and perfect thermal contact
+H2_dry_sand_const_perf_contact = '../heat_flux_data/H2_dry_sand_const_perf_contact_t_end_150.npz'                                # Dry sand with constant thermal properties and perfect thermal contact
 
 # Set different heat flux for different domains defined in heat_flux_ground() in heat_flux.py
 heat_flux_data_domain_1 = H2_wet_sand_variable_boiling_corr_freeze
