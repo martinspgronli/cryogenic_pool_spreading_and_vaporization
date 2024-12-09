@@ -1,8 +1,6 @@
 # Cryogenic pool spreading and vaporization
 <p align="center"><img width="650" src="evaporation_rate.png"></p>
 
-
-
 This repository contains Python code for simulating the spill of liquid ammonia (LNH3) or liquid hydrogen (LH2) onto solid ground. 
 The scripts uses the Python interface of [Clawpack](https://www.clawpack.org), called PyClaw, to solve the shallow water equations. 
 Several parameters can be varied including initial spill velocity, ground topography, obstructions, and details 
