@@ -7,7 +7,7 @@ Several parameters can be varied including initial spill velocity, ground topogr
 regarding the thermal properties of the substrate. The variable thermal properties of the substrate have been accounted for when 
 calculating heat flux from the ground into the liquid pool. Moreover, both boiling correlations and perfect thermal contact have 
 been implemented. For more comprehensive information, please refer to the additional details provided in: 
-[Spill, evaporation and substrate thermal transport model for liquid H2 and NH3 (2024)](ADD_LINK_TO_PUBLICATION.com).
+[Effect of substrate thermal properties on evaporating liquid hydrogen and ammonia spills (2024)](ADD_LINK_TO_PUBLICATION.com).
 
 After cloning, pip install requirements by typing 
 ```bash
