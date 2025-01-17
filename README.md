@@ -2,7 +2,7 @@
 <p align="center"><img width="700" src="evaporation_rate.png"></p>
 
 This repository contains Python code for simulating the spill of liquid ammonia (LNH3) or liquid hydrogen (LH2) onto solid ground. 
-The scripts use the Python interface of [Clawpack](https://www.clawpack.org), called PyClaw, to solve the shallow water equations. 
+The scripts use the Python interface of [Clawpack](https://www.clawpack.org), to solve the shallow water equations. 
 Several parameters can be varied including initial spill velocity, ground topography, obstructions, and details 
 regarding the thermal properties of the substrate. The variable thermal properties of the substrate have been accounted for when 
 calculating heat flux from the ground into the liquid pool. Moreover, both boiling correlations and perfect thermal contact have 
