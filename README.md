@@ -6,7 +6,7 @@ The scripts use the Python interface of [Clawpack](https://www.clawpack.org) to 
 Several parameters can be varied including initial spill velocity, ground topography, obstructions, and details 
 regarding the thermal properties of the substrate. The variable thermal properties of the substrate have been accounted for when 
 calculating heat flux from the ground into the liquid pool. Moreover, both boiling correlations and perfect thermal contact have 
-been implemented. For more comprehensive information, please refer to the additional details provided in: 
+been implemented. For more comprehensive information, please refer to: 
 [Effect of substrate thermal properties on evaporating liquid hydrogen and ammonia spills (2024)](ADD_LINK_TO_PUBLICATION.com).
 
 After cloning, pip install requirements by typing 
