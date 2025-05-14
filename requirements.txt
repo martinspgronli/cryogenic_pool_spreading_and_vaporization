@@ -1,4 +1,4 @@
-clawpack==5.10.0
+clawpack==5.12.0
 matplotlib==3.6.3
 numpy==1.24.1
 pandas==2.2.2
